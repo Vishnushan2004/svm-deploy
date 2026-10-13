@@ -14,7 +14,7 @@ def clean_text(t):
     return re.sub(r"\s+", " ", t).strip()
 
 st.title("Movie Review Sentiment Analysis (SVM)")
-review = st.text_area("Movie Review", height=150,
+review = st.text_area("Movie Review: eg Best Movie in the world, Nice Good story, wonderful acting", height=150,
                       placeholder="Enter a movie review here...")
 
 if st.button("Predict"):
